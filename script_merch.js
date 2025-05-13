@@ -91,7 +91,7 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
 
 document.getElementById('checkout').addEventListener('click', () => {
     if(cart.length > 0) {
-        alert(`Thank you, Total prices: Rp ${totalPrice.toLocaleString()}`)
+        alert(`Thank you, Total prices: ₱${totalPrice.toLocaleString()}`)
         cart = []
         totalPrice = 0
         document.dispatchEvent(new CustomEvent('cartUpdated', {detail: {cart, totalPrice} }))
