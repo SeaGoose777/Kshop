@@ -49,12 +49,12 @@ body {
     z-index: 1102;
 }
 
-/* Show Sidebar when checked */
+
 #menu-toggle:checked + .menu-icon + .sidebar {
     left: 0;
 }
 
-/* Overlay Hidden by Default */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -69,15 +69,15 @@ body {
     z-index: 1100;
 }
 
-/* Show Overlay when checked */
+
 #menu-toggle:checked + .menu-icon + .sidebar + .overlay {
     opacity: 1;
     pointer-events: auto;
 }
 
-/* Sidebar links */
+
 .sidebar a {
-    color: white;
+    color: black;
     padding: 15px 20px;
     text-decoration: none;
     font-size: 18px;
@@ -100,7 +100,7 @@ body {
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    z-index: 1101; /* above overlay */
+    z-index: 1101; 
 }
 
 .logo-center {
@@ -112,7 +112,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    z-index: 1101; /* above overlay */
+    z-index: 1101; 
 }
 
 .right-icons a img {
